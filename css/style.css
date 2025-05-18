@@ -10427,7 +10427,7 @@ h6,
   background-color: #000 !important;
 }
 .banner3 {
-  min-height: 82vh;
+    min-height: 82vh;
   background-image: url(../img/banner-3.jpg);
   background-size: cover;
   background-position: center;
@@ -11174,11 +11174,19 @@ button.icons {
 .banner{
   min-height: 20vh;
 }
+.banner2 {
+  min-height: 20vh;
+
+}
+.banner3 {
+  min-height: 20vh;
+
+}
 .banner-overlay{
   min-height: 20vh;
 }
   .banner-items {
-  padding-top: 2vh;
+  padding-top: 5vh;
 }
 .banner-items h1{
   font-size: 15px;
@@ -11197,6 +11205,14 @@ display: none;
 .banner-overlay{
   min-height: 20vh;
 }
+.banner2 {
+  min-height: 20vh;
+
+}
+.banner3 {
+  min-height: 20vh;
+
+}
   .banner-items {
   padding-top: 8vh;
 }
@@ -11211,6 +11227,14 @@ display: none;
 }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
+  .banner2 {
+  min-height: 40vh;
+
+}
+.banner3 {
+  min-height: 40vh;
+
+}
   .text-sm-left {
     text-align: left !important;
   }
@@ -11259,6 +11283,14 @@ display: none;
 .banner{
   min-height: 50vh;
 }
+.banner2 {
+  min-height: 50vh;
+
+}
+.banner3 {
+  min-height: 50vh;
+
+}
 .banner-overlay{
   min-height: 50vh;
 }
@@ -11284,6 +11316,14 @@ display: none;
 }
 .banner{
   min-height: 60vh;
+}
+.banner2 {
+  min-height: 60vh;
+
+}
+.banner3 {
+  min-height: 60vh;
+
 }
 .banner-overlay{
   min-height: 60vh;
