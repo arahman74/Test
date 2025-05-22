@@ -253,8 +253,9 @@ label {
   margin-bottom: 0.5rem;
 }
 .navbar img {
-  width: 150px;
-  height: 60px;
+  width: 250px;
+  height: 100px;
+  background: white;
 
 }
 button {
@@ -10427,7 +10428,7 @@ h6,
   background-color: #000 !important;
 }
 .banner3 {
-    min-height: 82vh;
+  min-height: 82vh;
   background-image: url(../img/banner-3.jpg);
   background-size: cover;
   background-position: center;
@@ -10590,6 +10591,17 @@ h6,
     position: relative;
     top: -38px;
     margin: auto;
+}
+.inner-style .service-icon  img{
+    width: 75px;
+    height: 65px;
+    /* border-radius: 43px;
+    background-color: #f3f8fd;
+    border: 2px solid #ffffff;
+    line-height: 80px;
+    position: relative;
+    top: -38px;
+    margin: auto; */
 }
 .inner-style .service-icon img{
   color: #008080;
@@ -11174,19 +11186,11 @@ button.icons {
 .banner{
   min-height: 20vh;
 }
-.banner2 {
-  min-height: 20vh;
-
-}
-.banner3 {
-  min-height: 20vh;
-
-}
 .banner-overlay{
   min-height: 20vh;
 }
   .banner-items {
-  padding-top: 5vh;
+  padding-top: 2vh;
 }
 .banner-items h1{
   font-size: 15px;
@@ -11205,14 +11209,6 @@ display: none;
 .banner-overlay{
   min-height: 20vh;
 }
-.banner2 {
-  min-height: 20vh;
-
-}
-.banner3 {
-  min-height: 20vh;
-
-}
   .banner-items {
   padding-top: 8vh;
 }
@@ -11227,14 +11223,6 @@ display: none;
 }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .banner2 {
-  min-height: 40vh;
-
-}
-.banner3 {
-  min-height: 40vh;
-
-}
   .text-sm-left {
     text-align: left !important;
   }
@@ -11283,14 +11271,6 @@ display: none;
 .banner{
   min-height: 50vh;
 }
-.banner2 {
-  min-height: 50vh;
-
-}
-.banner3 {
-  min-height: 50vh;
-
-}
 .banner-overlay{
   min-height: 50vh;
 }
@@ -11316,14 +11296,6 @@ display: none;
 }
 .banner{
   min-height: 60vh;
-}
-.banner2 {
-  min-height: 60vh;
-
-}
-.banner3 {
-  min-height: 60vh;
-
 }
 .banner-overlay{
   min-height: 60vh;
