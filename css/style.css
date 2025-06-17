@@ -261,9 +261,13 @@ label {
   margin-bottom: 0.5rem;
 }
 .navbar img {
-  width: 180px;
-  height: 80px;
-  background: black;
+  width: 220px;
+  height: 70px;
+
+}
+.footer-logo img{
+    width: 220px;
+  height: 70px;
 }
 button {
   border-radius: 0;
@@ -273,7 +277,41 @@ button:focus {
   outline: 1px dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
-
+.btn-footer-contact{
+    color: #fff !important;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    font-weight: 500 !important;
+    background-color: RGBA(255, 255, 255, 0);
+}
+.footer-nav a{
+  color: #fff !important;
+  white-space: nowrap;
+}
+  .contact-info {
+    color: white; 
+    padding-left: 8vw!important;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; 
+  }
+  
+  .contact-item i {
+    color: white;
+    font-size: 18px;
+    margin-right: 15px; 
+    width: 20px; 
+    text-align: center;
+  }
+  
+  .contact-item h6 {
+    margin: 0; 
+    font-size: 16px;
+    font-weight: normal;
+  }
 input,
 button,
 select,
@@ -358,8 +396,9 @@ legend {
 .choose-contents h4{
   font-size: 35px;
 }
-.choose-contents h5{
-  font-size: 20px;
+.choose-contents p{
+  font-size: 18px;
+
 }
 .choose-img img{
  height: 400px;
@@ -375,9 +414,11 @@ legend {
   font-size: 20px;
 }
 
-
+.about-contents .sub-text{
+  font-size: 19px;
+}
 .about-img img{
-  height: 400px;
+  height: 430px;
 }
 /* Force centering for single items */
 .portfolio-container {
@@ -10042,7 +10083,8 @@ h6,
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Dark overlay for better text contrast */
+    /* background: rgba(0, 0, 0, 0.4);  */
+    background: rgba(0, 0, 0, 0.6); 
 }
 
 .banner-items {
@@ -10051,7 +10093,16 @@ h6,
     max-width: 1200px;
     padding: 2rem;
 }
-
+.banner-items p{
+  max-width: 700px;
+  font-size: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.justify-text{
+  text-align: justify;
+  /* text-justify: inter-word; */
+}
 /* .banner {
   min-height: 82vh;
   position: relative;
@@ -10124,6 +10175,9 @@ rgba(8, 88, 94, 0.5) 50%,
   position: relative; 
   z-index: 2; 
 }
+.banner-items-resources p{
+  font-size: 20px;
+}
 
 .banner-items-service {
    padding-top: 25vh!important;
@@ -10183,9 +10237,9 @@ rgba(8, 88, 94, 0.5) 50%,
   position: relative; 
   z-index: 2; 
 } */
-.banner-items {
+/* .banner-items {
   padding-top: 20vh;
-}
+} */
 .single-services-box h4 {
   color: var(--card-text) !important;
 }
@@ -10491,7 +10545,7 @@ rgba(8, 88, 94, 0.5) 50%,
 }
 
 .style-three .massage-sent-button button:hover {
-  color: #0c5adb;
+  color: #008080;
   background: #fff;
 }
 
@@ -10499,7 +10553,8 @@ rgba(8, 88, 94, 0.5) 50%,
   box-sizing: border-box;
   box-shadow: 2px solid grey;
   background-color: #008080;
-  padding: 70px 49px;
+  padding: 50px 49px;
+
   border-radius: 10px;
 }
 
@@ -10931,7 +10986,8 @@ button.icons {
 }
 @media screen and (min-width: 275px) and (max-width: 389px) {
   .banner {
-    min-height: 20vh;
+    height: 20vh;
+    min-height: 300px;
   }
   .banner-overlay {
     min-height: 20vh;
@@ -10982,7 +11038,8 @@ button.icons {
 }
 @media screen and (min-width: 390px) and (max-width: 575px) {
   .banner {
-    min-height: 20vh;
+    height: 20vh;
+    min-height: 300px;
   }
   .banner-overlay {
     min-height: 20vh;
@@ -11158,12 +11215,12 @@ button.icons {
   .banner-items {
     padding-top: 10vh;
   }
-  .banner-items h1 {
+  /* .banner-items h1 {
     font-size: 30px;
   }
   .banner-items p {
     font-size: 15px;
-  }
+  } */
   .banner {
     min-height: 60vh;
   }

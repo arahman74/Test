@@ -39,7 +39,7 @@
     <div class="container">
       <nav class="navbar navbar-expand-lg nav-bg navbar-light py-3 py-lg-0">
         <a href="index.html" class="navbar-brand text-secondary">
-          <img src="img/Logo-002.png" alt="Logo">
+          <img src="img/Logo 01.png" alt="Logo">
         </a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
           <span class="navbar-toggler-icon"></span>
@@ -89,7 +89,7 @@
   <div class="banner">
     <!-- Video container with blur effect -->
     <div class="banner-video">
-      <video autoplay muted loop class="w-100">
+      <video autoplay muted loop class="w-100" id="bannerVideo">
         <source src="img/AdobeStock_250452057_hero_banner.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
@@ -100,7 +100,7 @@
     <!-- Content container positioned above the video -->
     <div class="container banner-items">
       <div class="row">
-        <div class="px-md-5 text-center text-lg-left">
+        <div class="px-md-5">
           <h1 class="display-2 text-uppercase mb-3">
             Driving innovation, powering growth
           </h1>
@@ -124,7 +124,7 @@
       <h1 class="display-4 text-uppercase text-center mb-5">
         Our Solutions
       </h1>
-      <h3 class="text-uppercase text-center mb-5">
+      <h3 class="text-uppercase mb-5 text-center">
         We design and deploy future-ready solutions,harnessing technology, expertise, and strategic insight to solve
         complex challenges and propel your success.
       </h3>
@@ -134,7 +134,7 @@
             <div class="service-content">
               <i class="fa fa-3x fa-laptop-code icon-primary mb-4"></i>
               <h4>FRONTEND DESIGN & DEVELOPMENT</h4>
-              <p>
+              <p class="justify-text">
                 Building interactive web experiences using modern frameworks (React, Vue, Angular). We focus on
                 responsive layouts, smooth animations, and optimized performance to engage users and boost business
                 outcomes.
@@ -146,8 +146,8 @@
           <div class="single-services-box">
             <div class="service-content">
               <i class="fa fa-3x fa-code icon-primary mb-4"></i>
-              <h4>Backend Development</h4>
-              <p>
+              <h4>BACKEND DEVELOPMENT</h4>
+              <p class="justify-text">
                 Developing secure, high-availability backend systems with modern stacks (Node.js, Django, Laravel). We
                 specialize in RESTful APIs, database optimization, microservices, and cloud deployments for peak
                 performance and scalability.
@@ -161,8 +161,8 @@
           <div class="single-services-box">
             <div class="service-content">
               <i class="fa fa-3x fa-envelope-open-text icon-primary mb-4"></i>
-              <h4>Graphic design</h4>
-              <p>
+              <h4>GRAPHIC DESIGN</h4>
+              <p class="justify-text">
                 Creating memorable brand identities through logos, packaging, social media assets, and print collateral.
                 Our designs combine aesthetic appeal with strategic messaging to elevate your market presence.
               </p>
@@ -174,7 +174,7 @@
             <div class="service-content">
               <i class="fas fa-server fa-3x icon-primary mb-4"></i>
               <h4>HOSTING & SERVER MANAGEMENT</h4>
-              <p>
+              <p class="justify-text">
                 Delivering proactive server administration with AWS/GCP optimization, load balancing, DDoS protection,
                 and automated backups. We ensure 99.9% uptime, fast deployments, and enterprise-grade security for your
                 critical infrastructure.
@@ -199,12 +199,12 @@
           <h4 class="display-5 text-uppercase mb-5">
             Your Most Trusted Digital Solutions Partner in Downtown
           </h4>
-          <h5 class="text-primary mb-3">
+          <p class="sub-text justify-text mb-3">
             ChoiceDev specializes in custom web design, development, and digital solutions tailored to your business
             needs. We combine creativity, cutting-edge technology, and strategic thinking to build fast, scalable, and
             secure platforms that drive growth. Your success is our code.
-          </h5>
-          <p>
+          </p>
+          <p class="justify-text">
             At ChoiceDev, we don’t just build websites—we craft digital experiences that elevate your brand and engage
             your audience. From responsive designs to robust e-commerce platforms, our team delivers innovative,
             future-proof tools that align with your goals. Let us transform your vision into a high-performing online
@@ -332,10 +332,10 @@
           <h4 class="display-5 text-uppercase mb-4">
             Custom Digital Solutions That Build and Scale Your Business
           </h4>
-          <h5 class="text-uppercase mb-3">
+          <p class=" justify-text mb-3">
             We don’t believe in one-size-fits-all solutions. Every project begins with listening and understanding your
             vision, challenges, and goals—then we craft a strategy that delivers measurable results.
-          </h5>
+          </p>
           <p class="mb-4">
           <ul>
             <li>Custom web and digital solutions tailored to your business</li>
@@ -358,12 +358,10 @@
         </div>
         <div class="col-lg-6 choose-contents pt-5">
           <h4 class="display-5 text-uppercase mb-4">
-            Ready to Level Up Your Impact with Advanced Tech Innovation?
+            Ready to Level Up with Future-Ready Technology?
           </h4>
-          <p class="mb-2">
-            Step into a future of untapped possibilities and substantial gains. With Scopic as your ally, expect a
-            journey marked by tailored tech innovation, increased profit margins, and a dominant presence in your
-            industry.
+          <p class="mb-2 justify-text">
+        The future is full of potential—let ChoiceDev help you seize it. Through strategic tech innovation, we empower your growth and sharpen your competitive edge.
           </p>
           <div class="btn-free-qoute pt-3">
             <a href="contact.html" class="btn btn-qoute text-uppercase mt-1 py-3 px-5">Request a Free Quote</a>
@@ -392,7 +390,7 @@
     <div class="row">
       <div class="col-md-6">
         <p class="pt-3 text-white-50">
-          &copy; <a href="#">ChoiceDev Ltd</a>. All Rights Reserved.
+          &copy; <a href="#">ChoiceDev</a>. All Rights Reserved.
         </p>
       </div>
       <div class="col-md-6 pt-2">
@@ -412,6 +410,16 @@
 
   <!-- Back to Top -->
   <a href="#" class="btn btn-lg btn-footer btn-lg-square back-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const video = document.querySelector('.banner-video video');
+    if (video) {
+      video.playbackRate = 0.5;
+    }
+  });
+</script>
 
   <!-- JavaScript Libraries -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
