@@ -264,6 +264,27 @@ label {
   width: 220px;
   height: 70px;
 }
+  .quote-button {
+    background-color: #008080;
+    color: white !important;
+    border: 1px solid #008080;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    height: calc(100% - 80px);
+    margin-top: 30px;
+    margin-left: 40px;
+    padding: 10px !important;
+
+  }
+
+  .quote-button:hover {
+    background-color: white;
+    border-color: #006666;
+    color: #006666 !important;
+    text-decoration: none;
+  }
 .footer-logo img {
   width: 220px;
   height: 70px;
@@ -10221,11 +10242,27 @@ rgba(8, 88, 94, 0.5) 50%,
 } */
 
 .blogbanner1 {
-  min-height: 50vh;
+  height: 50vh;
 
-  background-image: url(../img/Blog_update.jpg);
+  background-image: url(../img/AI\ page.jpeg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-color: #000 !important;
+}
+.blogbanner2 {
+  height: 50vh;
+  background-image: url(../img/Low\ code\ page.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #000 !important;
+}
+.blogbanner3 {
+  height: 50vh;
+  background-image: url(../img/WE\ DESIGN\ for\ Page.jpeg);
+  background-size: 100% auto; 
+  background-position: center center;
   background-repeat: no-repeat;
   background-color: #000 !important;
 }
@@ -11041,6 +11078,15 @@ button.icons {
   background: #0c59db;
 }
 @media (max-width: 274px) {
+        .blogbanner1 {
+    min-height: 20vh;
+  }
+      .blogbanner2 {
+    min-height: 20vh;
+  }
+    .blogbanner3 {
+    height: 20vh;
+  }
   .footer-nav {
     display: none !important;
   }
@@ -11084,10 +11130,16 @@ button.icons {
     overflow-y: hidden;
   }
   .blogbanner1 {
-    min-height: 20vh;
+    height: 20vh;
+  }
+    .blogbanner2 {
+    height: 20vh;
+  }
+    .blogbanner3 {
+    height: 20vh;
   }
     .blog-title-banner {
-    padding-top: 50px !important;
+    padding-top: 2px !important;
   }
   .policybanner {
     height: 10vh;
@@ -11151,10 +11203,16 @@ button.icons {
     min-height: 20vh;
   }
   .blogbanner1 {
-    min-height: 20vh;
+    height: 25vh;
+  }
+      .blogbanner2 {
+    height: 25vh;
+  }
+    .blogbanner3 {
+    height: 25vh;
   }
     .blog-title-banner {
-    padding-top: 50px !important;
+    padding-top: 2px !important;
   }
   .policybanner {
     height: 15vh;
@@ -11209,7 +11267,13 @@ button.icons {
     min-height: 20vh;
   }
   .blogbanner1 {
-    min-height: 20vh;
+    height: 25vh;
+  }
+      .blogbanner2 {
+      height: 25vh;
+  }
+    .blogbanner3 {
+     height: 25vh;
   }
   .policybanner {
     min-height: 20vh;
@@ -11218,7 +11282,7 @@ button.icons {
 height: 20vh;
   }
     .blog-title-banner {
-    padding-top: 100px !important;
+    padding-top: 2px !important;
   }
   .banner3 {
     min-height: 20vh;
@@ -11355,7 +11419,13 @@ height: 20vh;
     min-height: 20vh;
   }
   .blogbanner1 {
-    min-height: 20vh;
+      height: 25vh;
+  }
+      .blogbanner2 {
+      height: 25vh;
+  }
+    .blogbanner3 {
+      height: 25vh;
   }
   .banner3 {
     min-height: 20vh;
@@ -11393,7 +11463,7 @@ height: 20vh;
     padding-top: 10vh;
   }
   .blog-title-banner {
-    padding-top: 100px;
+    padding-top: 2px;
   }
   .banner-items h1 {
     font-size: 40px;
@@ -11416,7 +11486,13 @@ height: 20vh;
     min-height: 20vh;
   }
   .blogbanner1 {
-    min-height: 20vh;
+height: 20vh;
+  }
+      .blogbanner2 {
+    height: 25vh;
+  }
+    .blogbanner3 {
+       height: 25vh;
   }
   .policybanner {
     height: 30vh;
@@ -11440,20 +11516,12 @@ height: 20vh;
     height: 100%;
     overflow-y: hidden;
   }
-  /* .banner-items-service .text-md-left {
-    text-align: left !important;
-  }
-  .banner-items-service .text-md-right {
-    text-align: right !important;
-  }
- .banner-items-service .text-md-center {
-    text-align: center !important;
-  } */
+
   .banner-items {
     padding-top: 10vh;
   }
   .blog-title-banner {
-    padding-top: 150px !important;
+    padding-top: 2px !important;
   }
   /* .banner-items h1 {
     font-size: 30px;
