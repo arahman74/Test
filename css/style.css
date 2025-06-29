@@ -4271,6 +4271,12 @@ input[type="button"].btn-block {
     padding-right: 0;
     padding-left: 0;
   }
+  .quote-button{
+    /* display: none; */
+    margin-top: 5px!important;
+    margin-left: 0px!important;
+    width: 150px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -10376,7 +10382,15 @@ rgba(8, 88, 94, 0.5) 50%,
   transition: 0.5s;
   padding: 0px !important;
 }
-
+.services-text h4 {
+  font-size: 26px;
+  line-height: 27px;
+  color: #041424;
+  font-weight: 700;
+  margin: 2px 8px 16px 2px;
+  transition: 0.5s;
+  padding: 0px !important;
+}
 .single-services-box:hover .service-content h4,
 .service-content p {
   color: #fff;
@@ -10386,6 +10400,11 @@ rgba(8, 88, 94, 0.5) 50%,
   padding-right: 35px;
   transition: 0.5s;
   color: #686868;
+}
+
+.services-text  p{
+ color: #fff;
+   transition: 0.5s;
 }
 
 .single-services-box:hover .service-content p {
@@ -10518,7 +10537,11 @@ rgba(8, 88, 94, 0.5) 50%,
   font-weight: 600;
   margin: 0 0 14px;
 }
-
+.inner-style .services-text h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 14px;
+}
 .inner-style .service-content p {
   color: #fff;
 }
