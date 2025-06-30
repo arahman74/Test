@@ -421,12 +421,18 @@ legend {
 }
 
 .choose-contents h4 {
-  font-size: 35px;
+  font-size: 40px;
 }
 .choose-contents p {
-  font-size: 18px;
+  font-size: 20px;
+}
+.choose-contents ul li{
+  font-size: 16px;
 }
 .choose-img img {
+  height: 480px;
+}
+.free-quote-img img {
   height: 400px;
 }
 .footer-botton-social-icon ul {
@@ -434,17 +440,17 @@ legend {
 }
 
 .about-contents h4 {
-  font-size: 35px;
+  font-size: 40px;
 }
 .about-contents h5 {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .about-contents .sub-text {
-  font-size: 19px;
+  font-size: 20px;
 }
 .about-img img {
-  height: 430px;
+  height: 530px;
 }
 /* Force centering for single items */
 .portfolio-container {
@@ -10589,6 +10595,10 @@ rgba(8, 88, 94, 0.5) 50%,
 .style-three .contact-contetn h4 {
   font-size: 36px;
   margin: 0 0 35px;
+}
+.single-contact-box .contact-content p {
+  font-size: 20px;
+
 }
 .style-three .contact-info-box {
   display: flex;
