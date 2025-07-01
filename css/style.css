@@ -4630,7 +4630,9 @@ input[type="button"].btn-block {
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
 }
-
+.card-img-top{
+  height: 320px!important;
+}
 .card-img,
 .card-img-bottom {
   border-bottom-right-radius: calc(0.25rem - 1px);
@@ -10136,7 +10138,7 @@ h6,
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: blur(8px);
+  /* filter: blur(8px); */
   transform: scale(1.2);
 }
 
@@ -10517,6 +10519,10 @@ rgba(8, 88, 94, 0.5) 50%,
     position: relative;
     top: -38px;
     margin: auto; */
+}
+.inner-style .service-icon .mobile-dev-icon{
+  width: 42px;
+  height: 60px;
 }
 .inner-style .service-icon img {
   color: #008080;
