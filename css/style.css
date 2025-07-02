@@ -4632,7 +4632,7 @@ input[type="button"].btn-block {
   border-top-right-radius: calc(0.25rem - 1px);
 }
 .card-img-top{
-  height: 280px!important;
+  height: 300px!important;
   padding-top: 10px!important;
 }
 .card-img,
