@@ -407,7 +407,14 @@ fieldset {
   margin: 0;
   border: 0;
 }
-
+/* .portfolio-item:hover .portfolio-btn {
+  opacity: 1;
+  width: 350px!important;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 10px solid rgba(34, 36, 41, 0.9)!important;
+} */
 legend {
   display: block;
   width: 100%;
@@ -433,8 +440,9 @@ legend {
   height: 480px;
 }
 .free-quote-img img {
-  height: 400px;
+  height: 500px;
 }
+
 .footer-botton-social-icon ul {
   margin-right: 45px;
 }
@@ -494,7 +502,7 @@ legend {
   transition: all 0.3s;
 }
 .portfolio-btn:hover {
-  transform: scale(1.1);
+  transform: scale(1.0);
 }
 .card {
   transition: transform 0.3s;
