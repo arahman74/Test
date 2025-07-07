@@ -264,27 +264,26 @@ label {
   width: 220px;
   height: 70px;
 }
-  .quote-button {
-    background-color: #008080;
-    color: white !important;
-    border: 1px solid #008080;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-    height: calc(100% - 80px);
-    margin-top: 30px;
-    margin-left: 40px;
-    padding: 10px !important;
+.quote-button {
+  background-color: #008080;
+  color: white !important;
+  border: 1px solid #008080;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  height: calc(100% - 80px);
+  margin-top: 30px;
+  margin-left: 40px;
+  padding: 10px !important;
+}
 
-  }
-
-  .quote-button:hover {
-    background-color: white;
-    border-color: #006666;
-    color: #006666 !important;
-    text-decoration: none;
-  }
+.quote-button:hover {
+  background-color: white;
+  border-color: #006666;
+  color: #006666 !important;
+  text-decoration: none;
+}
 .footer-logo img {
   width: 220px;
   height: 70px;
@@ -407,6 +406,15 @@ fieldset {
   margin: 0;
   border: 0;
 }
+
+.carousel-item {
+  transition: transform 1s ease-in-out;
+}
+
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  transition: opacity 0s 1s;
+}
 /* .portfolio-item:hover .portfolio-btn {
   opacity: 1;
   width: 350px!important;
@@ -433,7 +441,7 @@ legend {
 .choose-contents p {
   font-size: 20px;
 }
-.choose-contents ul li{
+.choose-contents ul li {
   font-size: 16px;
 }
 .choose-img img {
@@ -471,7 +479,6 @@ legend {
   left: auto !important;
   top: auto !important;
   transform: none !important;
-
 }
 
 .portfolio-container {
@@ -502,7 +509,7 @@ legend {
   transition: all 0.3s;
 }
 .portfolio-btn:hover {
-  transform: scale(1.0);
+  transform: scale(1);
 }
 .card {
   transition: transform 0.3s;
@@ -528,7 +535,7 @@ legend {
   overflow: hidden;
   height: 550px;
   box-shadow: 0 0 30px 0 #4d698747;
-    display: flex;          /* Make card a flex container */
+  display: flex; /* Make card a flex container */
   flex-direction: column;
 }
 .blog-img {
@@ -574,7 +581,7 @@ legend {
 }
 .blog-card .blog-card-caption {
   padding: 20px;
-    flex: 1;                /* Take remaining space */
+  flex: 1; /* Take remaining space */
   display: flex;
   flex-direction: column;
 }
@@ -586,7 +593,7 @@ legend {
   color: #fff;
   padding: 8px 15px;
   border-radius: 4px;
-  margin-top: auto;       /* Push to bottom */
+  margin-top: auto; /* Push to bottom */
   align-self: flex-start; /* Align left (or 'flex-end' for right) */
 }
 .read-more-btn:hover,
@@ -609,8 +616,8 @@ legend {
   color: #000 !important;
 }
 .blog-card-caption p {
-  flex: 1;                /* Push button to bottom */
-  margin-bottom: 15px;    /* Spacing before button */
+  flex: 1; /* Push button to bottom */
+  margin-bottom: 15px; /* Spacing before button */
 }
 
 /* .blog-card .blog-card-caption .read-more-btn:hover {
@@ -4286,10 +4293,10 @@ input[type="button"].btn-block {
     padding-right: 0;
     padding-left: 0;
   }
-  .quote-button{
+  .quote-button {
     /* display: none; */
-    margin-top: 5px!important;
-    margin-left: 0px!important;
+    margin-top: 5px !important;
+    margin-left: 0px !important;
     width: 150px;
   }
 }
@@ -4639,9 +4646,9 @@ input[type="button"].btn-block {
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
 }
-.card-img-top{
-  height: 300px!important;
-  padding-top: 10px!important;
+.card-img-top {
+  height: 300px !important;
+  padding-top: 10px !important;
 }
 .card-img,
 .card-img-bottom {
@@ -10135,6 +10142,59 @@ h6,
   color: white;
 }
 
+/* 3rd Layer: Video */
+.banner-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; 
+}
+
+.banner-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.2);
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 2; 
+}
+
+/* 1st Layer: Text content */
+.banner-items {
+  position: relative;
+  z-index: 3; /* highest z-index */
+  max-width: 1200px;
+  padding: 2rem;
+}
+
+.banner-items p {
+  max-width: 700px;
+  font-size: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* .banner {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
 .banner-video {
   position: absolute;
   top: 0;
@@ -10148,17 +10208,16 @@ h6,
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* filter: blur(8px); */
+ 
   transform: scale(1.2);
-}
-
-.video-overlay {
+} */
+/* filter: blur(8px); */
+/* .video-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  /* background: rgba(0, 0, 0, 0.4);  */
   background: rgba(0, 0, 0, 0.6);
 }
 
@@ -10174,9 +10233,18 @@ h6,
   text-align: justify;
   text-justify: inter-word;
 }
+
+.banner-overlay {
+  background: linear-gradient(270deg, rgba(0, 147, 147, 0) 0%, #005f73 100%);
+  min-height: 82vh;
+} */
 .justify-text {
   text-align: justify;
   /* text-justify: inter-word; */
+}
+.banner-overlay-terms {
+  background: linear-gradient(270deg, rgba(0, 147, 147, 0) 0%, #005f73 100%);
+  min-height: 40vh;
 }
 /* .banner {
   min-height: 82vh;
@@ -10205,13 +10273,6 @@ rgba(8, 88, 94, 0.5) 50%,
   );
   min-height: 82vh;
 } */
-
-.banner-overlay {
-  /* background: linear-gradient(270deg, rgba(0, 89, 129, 0) 0%, #002E42 100%); */
-  /* background: linear-gradient(270deg, rgba(0, 105, 92, 0) 0%, #003D33 100%); */
-  background: linear-gradient(270deg, rgba(0, 147, 147, 0) 0%, #005f73 100%);
-  min-height: 82vh;
-}
 
 /* .banner2 {
   position: relative; 
@@ -10259,6 +10320,9 @@ rgba(8, 88, 94, 0.5) 50%,
   position: relative;
   z-index: 2;
 }
+.banner-items-service p {
+  font-size: 18px;
+}
 /* .banner-items-resources{
   padding-top: 15vh;
   display: flex;
@@ -10266,7 +10330,7 @@ rgba(8, 88, 94, 0.5) 50%,
 } */
 
 .blogbanner1 {
-  height: 50vh;
+  height: 70vh;
 
   background-image: url(../img/AI\ page.jpeg);
   background-size: cover;
@@ -10275,21 +10339,77 @@ rgba(8, 88, 94, 0.5) 50%,
   background-color: #000 !important;
 }
 .blogbanner2 {
-  height: 50vh;
+  height: 70vh;
   background-image: url(../img/Low\ code\ page.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #000 !important;
 }
-.blogbanner3 {
-  height: 50vh;
+/* .blogbanner3 {
+  height: 80vh;
   background-image: url(../img/WE\ DESIGN\ for\ Page.jpeg);
-  background-size: 100% auto; 
-  background-position: center center;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #000 !important;
 }
+ */
+
+
+
+ .blogbanner3 {
+  position: relative;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.banner-image-blog-design {
+  position: absolute;
+  top: -100px;
+  width: 100%;
+}
+
+.banner-image-blog-design img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  background-color: #000; 
+}
+
+.banner-content-design-blog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+.design-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 2; 
+}
+
+.blog-title-banner-design h1 {
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7); 
+}
+
+
+
+
+
 .policybanner {
   height: 40vh;
   background-image: url(../img/bhavani-privacy.jpg);
@@ -10298,9 +10418,10 @@ rgba(8, 88, 94, 0.5) 50%,
   background-repeat: no-repeat;
   background-color: #000 !important;
 }
-.termsbanner{
+
+.termsbanner {
   height: 40vh;
-  background-image: url(../img/terms-conditions.webp);
+  background-image: url(../img/conditionsss.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -10420,9 +10541,9 @@ rgba(8, 88, 94, 0.5) 50%,
   color: #686868;
 }
 
-.services-text  p{
- color: #fff;
-   transition: 0.5s;
+.services-text p {
+  color: #fff;
+  transition: 0.5s;
 }
 
 .single-services-box:hover .service-content p {
@@ -10479,6 +10600,12 @@ rgba(8, 88, 94, 0.5) 50%,
 .blog-body {
   background: white;
 }
+.policy-body {
+  background: white;
+}
+.policy-content-details ul li {
+  list-style-type: disc;
+}
 .text-card {
   padding-left: 150px;
   padding-top: 50px;
@@ -10530,7 +10657,7 @@ rgba(8, 88, 94, 0.5) 50%,
     top: -38px;
     margin: auto; */
 }
-.inner-style .service-icon .mobile-dev-icon{
+.inner-style .service-icon .mobile-dev-icon {
   width: 42px;
   height: 60px;
 }
@@ -10614,7 +10741,6 @@ rgba(8, 88, 94, 0.5) 50%,
 }
 .single-contact-box .contact-content p {
   font-size: 20px;
-
 }
 .style-three .contact-info-box {
   display: flex;
@@ -10714,14 +10840,14 @@ rgba(8, 88, 94, 0.5) 50%,
 }
 
 .style-three .contact-info-content p {
-  font-size: 15px;
+  font-size: 19px;
   color: #ffffff;
   font-weight: 400;
   margin: 0;
 }
 
 .style-three .contact-info-content h4 {
-  font-size: 20px;
+  font-size: 17px;
   color: #ffffff;
   font-weight: 600;
   margin: 1px 0 0;
@@ -10929,10 +11055,8 @@ rgba(8, 88, 94, 0.5) 50%,
   z-index: 1;
   transition: 0.5s;
 }
-.blog-title-banner{
-
+.blog-title-banner {
   padding-top: 200px;
-
 }
 .widget-category ul li a:hover {
   color: #fff;
@@ -11127,13 +11251,13 @@ button.icons {
   background: #0c59db;
 }
 @media (max-width: 274px) {
-        .blogbanner1 {
+  .blogbanner1 {
     min-height: 20vh;
   }
-      .blogbanner2 {
+  .blogbanner2 {
     min-height: 20vh;
   }
-    .blogbanner3 {
+  .blogbanner3 {
     height: 20vh;
   }
   .footer-nav {
@@ -11156,6 +11280,14 @@ button.icons {
     gap: 10px;
     padding-left: 10px;
   }
+  .modal-content {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .modal-body img {
+    width: 100% !important;
+    border-radius: 5px;
+  }
 }
 @media screen and (min-width: 275px) and (max-width: 389px) {
   .banner {
@@ -11163,6 +11295,9 @@ button.icons {
     min-height: 300px;
   }
   .banner-overlay {
+    min-height: 20vh;
+  }
+  .banner-overlay-terms {
     min-height: 20vh;
   }
   .banner2 {
@@ -11181,20 +11316,20 @@ button.icons {
   .blogbanner1 {
     height: 20vh;
   }
-    .blogbanner2 {
+  .blogbanner2 {
     height: 20vh;
   }
-    .blogbanner3 {
+  .blogbanner3 {
     height: 20vh;
   }
-    .blog-title-banner {
+  .blog-title-banner {
     padding-top: 2px !important;
   }
   .policybanner {
     height: 10vh;
   }
-  .termsbanner{
- height: 10vh;
+  .termsbanner {
+    height: 10vh;
   }
   .banner-items-resources {
     padding-top: 8vh;
@@ -11234,18 +11369,36 @@ button.icons {
     gap: 10px;
     padding-left: 80px;
   }
-    .footer-nav-2 {
+  .footer-nav-2 {
     padding-top: 20px !important;
-  padding-left: 50px;
+    padding-left: 50px;
   }
-
+  .modal-content {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .modal-body img {
+    width: 100% !important;
+    border-radius: 5px;
+  }
 }
 @media screen and (min-width: 390px) and (max-width: 575px) {
   .banner {
     height: 20vh;
     min-height: 300px;
   }
+  .modal-content {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .modal-body img {
+    width: 100% !important;
+    border-radius: 5px;
+  }
   .banner-overlay {
+    min-height: 20vh;
+  }
+  .banner-overlay-terms {
     min-height: 20vh;
   }
   .banner2 {
@@ -11254,20 +11407,20 @@ button.icons {
   .blogbanner1 {
     height: 25vh;
   }
-      .blogbanner2 {
+  .blogbanner2 {
     height: 25vh;
   }
-    .blogbanner3 {
+  .blogbanner3 {
     height: 25vh;
   }
-    .blog-title-banner {
+  .blog-title-banner {
     padding-top: 2px !important;
   }
   .policybanner {
     height: 15vh;
   }
-  .termsbanner{
- height: 15vh;
+  .termsbanner {
+    height: 15vh;
   }
   .banner-items {
     padding-top: 2vh !important;
@@ -11300,9 +11453,9 @@ button.icons {
     gap: 10px;
     padding-left: 100px;
   }
-    .footer-nav-2 {
+  .footer-nav-2 {
     padding-top: 20px !important;
-  padding-left: 50px;
+    padding-left: 50px;
   }
   .footer-desc-col {
     padding-bottom: 50px;
@@ -11312,25 +11465,29 @@ button.icons {
   .banner-overlay {
     min-height: 20vh;
   }
+  .banner-overlay-terms {
+    min-height: 20vh;
+  }
   .banner2 {
     min-height: 20vh;
   }
   .blogbanner1 {
     height: 25vh;
   }
-      .blogbanner2 {
-      height: 25vh;
+  .blogbanner2 {
+    height: 25vh;
   }
-    .blogbanner3 {
-     height: 25vh;
+  .blogbanner3 {
+    height: 25vh;
   }
+
   .policybanner {
     min-height: 20vh;
   }
-  .termsbanner{
-height: 20vh;
+  .termsbanner {
+    height: 20vh;
   }
-    .blog-title-banner {
+  .blog-title-banner {
     padding-top: 2px !important;
   }
   .banner3 {
@@ -11364,6 +11521,9 @@ height: 20vh;
   .banner-overlay {
     min-height: 40vh;
   }
+  .banner-overlay-terms {
+    min-height: 40vh;
+  }
   .banner-items a {
     display: none;
   }
@@ -11380,7 +11540,6 @@ height: 20vh;
   .footer-desc-col {
     padding-bottom: 50px;
   }
-
 }
 /* @media (max-width: 990px) {
     .footer-social-row .col-md-4,
@@ -11413,20 +11572,20 @@ height: 20vh;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  .blog-card-caption p{
+  .blog-card-caption p {
     font-size: 15px;
   }
 }
 @media (min-width: 980px) and (max-width: 1200px) {
-.blog-card {
-  position: relative;
-  background-color: var(--card-color);
-  border-radius: 10px;
-  overflow: hidden;
-  height: 550px;
-  box-shadow: 0 0 30px 0 #4d698747;
-}
-  .blog-card-caption p{
+  .blog-card {
+    position: relative;
+    background-color: var(--card-color);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 550px;
+    box-shadow: 0 0 30px 0 #4d698747;
+  }
+  .blog-card-caption p {
     font-size: 15px;
   }
 }
@@ -11464,17 +11623,20 @@ height: 20vh;
   .banner-overlay {
     min-height: 20vh;
   }
+  .banner-overlay-terms {
+    min-height: 25vh;
+  }
   .banner2 {
     min-height: 20vh;
   }
   .blogbanner1 {
-      height: 25vh;
+    height: 25vh;
   }
-      .blogbanner2 {
-      height: 25vh;
+  .blogbanner2 {
+    height: 25vh;
   }
-    .blogbanner3 {
-      height: 25vh;
+  .blogbanner3 {
+    height: 25vh;
   }
   .banner3 {
     min-height: 20vh;
@@ -11482,7 +11644,7 @@ height: 20vh;
   .policybanner {
     height: 25vh;
   }
-  .termsbanner{
+  .termsbanner {
     height: 25vh;
   }
   .banner-items-service {
@@ -11535,18 +11697,18 @@ height: 20vh;
     min-height: 20vh;
   }
   .blogbanner1 {
-height: 20vh;
+    height: 20vh;
   }
-      .blogbanner2 {
+  .blogbanner2 {
     height: 25vh;
   }
-    .blogbanner3 {
-       height: 25vh;
+  .blogbanner3 {
+    height: 35vh;
   }
   .policybanner {
     height: 30vh;
   }
-  .termsbanner{
+  .termsbanner {
     height: 30vh;
   }
   .banner3 {
@@ -11583,6 +11745,9 @@ height: 20vh;
   }
   .banner-overlay {
     min-height: 60vh;
+  }
+  .banner-overlay-terms {
+    min-height: 30vh;
   }
 }
 @media screen and (min-width: 1250px) {
