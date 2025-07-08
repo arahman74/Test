@@ -42,11 +42,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Host = 'smtp.gmail.com'; 
         $mail->SMTPAuth = true;  
         $mail->Port = 587;  
-        $mail->Username = 'hybritechinnovationsltd24@gmail.com';  
+        $mail->Username = 'choicedevinfo@gmail.com';  
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Password = 'yngvkpmhzxzptevl';  
+        $mail->Password = 'ehangsxysryxueid';  
         $mail->setFrom($email, $name);  
-        $mail->addAddress('hybritechinnovationsltd24@gmail.com', 'Recipient Name');
+        $mail->addAddress('arahman.hybritech65@gmail.com', 'Recipient Name');
         $mail->addReplyTo($email, $name);
         $mail->Subject = $subject;
         $mail->isHTML(true);

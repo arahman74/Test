@@ -515,6 +515,12 @@ legend {
   transition: transform 0.3s;
   margin-bottom: 20px;
 }
+.hr-style {
+  height: 2px;
+  border: none;
+  background-color: grey;
+  margin: 20px 0;
+}
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -10122,69 +10128,8 @@ h6,
   background: #142d2e;
   color: #fff;
 }
-/* .banner {
-  min-height: 82vh;
-  background-image: url(../img/banner-1.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #000 !important;
-} */
 
 .banner {
-  position: relative;
-  height: 100vh; /* or your preferred height */
-  min-height: 600px; /* minimum height */
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
-/* 3rd Layer: Video */
-.banner-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1; 
-}
-
-.banner-video video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: scale(1.2);
-}
-
-.video-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); 
-  z-index: 2; 
-}
-
-/* 1st Layer: Text content */
-.banner-items {
-  position: relative;
-  z-index: 3; /* highest z-index */
-  max-width: 1200px;
-  padding: 2rem;
-}
-
-.banner-items p {
-  max-width: 700px;
-  font-size: 20px;
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-/* .banner {
   position: relative;
   height: 100vh;
   min-height: 600px;
@@ -10201,32 +10146,33 @@ h6,
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 1;
 }
 
 .banner-video video {
   width: 100%;
   height: 100%;
   object-fit: cover;
- 
   transform: scale(1.2);
-} */
-/* filter: blur(8px); */
-/* .video-overlay {
+}
+
+.video-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 2;
 }
 
 .banner-items {
   position: relative;
-  z-index: 1;
+  z-index: 3;
   max-width: 1200px;
   padding: 2rem;
 }
+
 .banner-items p {
   max-width: 700px;
   font-size: 20px;
@@ -10234,10 +10180,6 @@ h6,
   text-justify: inter-word;
 }
 
-.banner-overlay {
-  background: linear-gradient(270deg, rgba(0, 147, 147, 0) 0%, #005f73 100%);
-  min-height: 82vh;
-} */
 .justify-text {
   text-align: justify;
   /* text-justify: inter-word; */
@@ -10246,41 +10188,6 @@ h6,
   background: linear-gradient(270deg, rgba(0, 147, 147, 0) 0%, #005f73 100%);
   min-height: 40vh;
 }
-/* .banner {
-  min-height: 82vh;
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-.banner .banner-video {
-  background-size: cover;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.banner-overlay {
-  background: radial-gradient(
-    29.22% 167.9% at 76.69% 62.63%,
-    rgba(10, 147, 150, 0.6) 0%,
-rgba(8, 88, 94, 0.5) 50%,
- rgba(15, 31, 31, 0.4) 80%,
-   rgba(10, 10, 10, 0.3) 100%
-  
-  );
-  min-height: 82vh;
-} */
-
-/* .banner2 {
-  position: relative; 
-  min-height: 82vh;
-  
-  background-color: #000 !important;
-  overflow: hidden;
-} */
 
 .banner2 {
   min-height: 82vh;
@@ -10355,9 +10262,7 @@ rgba(8, 88, 94, 0.5) 50%,
 }
  */
 
-
-
- .blogbanner3 {
+.blogbanner3 {
   position: relative;
   height: 70vh;
   display: flex;
@@ -10376,8 +10281,8 @@ rgba(8, 88, 94, 0.5) 50%,
 .banner-image-blog-design img {
   width: 100%;
   height: 100%;
-  object-fit: contain; 
-  background-color: #000; 
+  object-fit: contain;
+  background-color: #000;
 }
 
 .banner-content-design-blog {
@@ -10397,18 +10302,14 @@ rgba(8, 88, 94, 0.5) 50%,
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); 
-  z-index: 2; 
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
 }
 
 .blog-title-banner-design h1 {
   color: #fff;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.7); 
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
-
-
-
-
 
 .policybanner {
   height: 40vh;
@@ -11390,6 +11291,9 @@ button.icons {
     height: 20vh;
     min-height: 300px;
   }
+    .banner-overlay {
+    min-height: 20vh;
+  }
   .modal-content {
     width: 100% !important;
     max-width: 100% !important;
@@ -11398,9 +11302,7 @@ button.icons {
     width: 100% !important;
     border-radius: 5px;
   }
-  .banner-overlay {
-    min-height: 20vh;
-  }
+
   .banner-overlay-terms {
     min-height: 20vh;
   }
@@ -11447,6 +11349,11 @@ button.icons {
   .banner-items a {
     display: none;
   }
+  .service-content p {
+ 
+  font-size: 14px;
+}
+
 
   .footer-nav {
     display: none !important;
@@ -11465,9 +11372,6 @@ button.icons {
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .banner-overlay {
-    min-height: 20vh;
-  }
   .banner-overlay-terms {
     min-height: 20vh;
   }
@@ -11518,11 +11422,14 @@ button.icons {
   .banner-items h1 {
     font-size: 30px;
   }
-  .banner {
-    min-height: 40vh;
+
+    .banner {
+    height: 30vh;
+    min-height: 300px;
   }
+
   .banner-overlay {
-    min-height: 40vh;
+    min-height: 30vh;
   }
   .banner-overlay-terms {
     min-height: 40vh;
@@ -11544,26 +11451,7 @@ button.icons {
     padding-bottom: 50px;
   }
 }
-/* @media (max-width: 990px) {
-    .footer-social-row .col-md-4,
-    .footer-nav-row .col-md-9,
-    .footer-legal-row .col-md-8 {
-      width: 100%;
-      margin-left: 0;
-      padding-left: 15px;
-    }
-    
-    .footer-botton-social-icon ul,
-    .footer-nav,
-    .footer-nav-2 {
-      justify-content: center;
-      padding-left: 0 !important;
-    }
-    
-    .footer-nav {
-      flex-wrap: wrap;
-    }
-  } */
+
 
 @media (min-width: 900px) {
   .footer-nav-row .col-md-9 {
@@ -11578,7 +11466,21 @@ button.icons {
   .blog-card-caption p {
     font-size: 15px;
   }
+      .banner {
+    height: 40vh;
+    min-height: 400px;
+  }
+
+
+
 }
+@media (min-width: 768px) and (max-width: 990px) {
+  .service-content p {
+  font-size: 15px;
+}
+
+}
+
 @media (min-width: 980px) and (max-width: 1200px) {
   .blog-card {
     position: relative;
