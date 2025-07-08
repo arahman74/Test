@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (!$responseData->success || $responseData->score < 0.5) {
     mail(
-        'hybritechinnovationsltd24@gmail.com',
+        'choicedevinfo@gmail.com',
         'Bot Attempt Detected',
         "A suspicious request was detected.\nIP: {$_SERVER['REMOTE_ADDR']}\nScore: {$responseData->score}"
     );
@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Password = 'ehangsxysryxueid';  
         $mail->setFrom($email, $name);  
-        $mail->addAddress('arahman.hybritech65@gmail.com', 'Recipient Name');
+        $mail->addAddress('info@choicedev.com.au', 'Recipient Name');
         $mail->addReplyTo($email, $name);
         $mail->Subject = $subject;
         $mail->isHTML(true);
