@@ -243,13 +243,13 @@ document.addEventListener('DOMContentLoaded', function() {
             submitButton.textContent = 'Sending...';
             
             // Send form data
-            fetch('contact.php', {
+            fetch('contact_mail.php', {
                 method: 'POST',
                 body: new FormData(form)
             })
             .then(response => {
                 console.log('Form submission complete, reloading');
-                window.location.href = 'contact.html?status=success';
+                window.location.href = 'contact.php?status=success';
             })
             .catch(error => {
                 console.error('Form submission error:', error);

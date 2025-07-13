@@ -46,10 +46,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav ml-auto py-0 pr-3 border-right">
-            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="index.php" class="nav-item nav-link active">Home</a>
             <a href="service.html" class="nav-item nav-link">Services</a>
             <a href="resources.html" class="nav-item nav-link">Resources</a>
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
+            <a href="contact.php" class="nav-item nav-link">Contact</a>
             <a href="contact.html" class="nav-item nav-link quote-button">GET A FREE QUOTE</a>
           </div>
         </div>
