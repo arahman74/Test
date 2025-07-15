@@ -58,17 +58,14 @@
   </div>
   <!-- Navbar End -->
 
-
-
-
 <div class="banner">
     <div class="banner-video">
       <video autoplay muted loop class="w-100">
-        <source src="img/AdobeStock_250452057_hero_banner.mp4" type="video/mp4" />
+        <source src="img/Hero video High resolution.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
-    <div class="video-overlay"></div>
+    <!-- <div class="video-overlay"></div> -->
     
     <div class="container banner-items">
       <div class="row">
@@ -103,7 +100,7 @@
             <div class="service-content">
               <i class="fa fa-3x fa-laptop-code icon-primary mb-4"></i>
               <h4>FRONTEND DESIGN & DEVELOPMENT</h4>
-              <p class="">
+              <p class="justify-text">
                 Building interactive web experiences using modern frameworks (React, Vue, Angular). We focus on
                 responsive layouts, smooth animations, and optimized performance to engage users and boost business
                 outcomes.
@@ -162,7 +159,7 @@
       </h1>
       <div class="row align-items-center pb-5 pt-5">
         <div class="col-lg-6 mb-3 about-img">
-          <img class="img-fluid mb-4 mb-lg-0" src="img/AdobeStock_281975477_about_us.jpeg" alt="" />
+          <img class="img-fluid mb-4 mb-lg-0" src="img/About us_updated.jpg" alt="" />
         </div>
         <div class="col-lg-6 about-contents">
           <h4 class="display-5 text-uppercase mb-5">
@@ -209,34 +206,39 @@
       <div class="row  portfolio-container justify-content-center">
 
         <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+           <a href="#" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
           <img src="img/Design project card picture.png" class="card-img-top" alt="Portfolio Item">
 
           <div class="portfolio-btn d-flex align-items-center justify-content-center">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+           
               <i class="fa fa-4x fa-plus text-primary"></i>
-            </a>
+        
           </div>
+          </a>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
           <!-- Portfolio Card -->
-          <img src="img/hrbritech_ltd_2.jpg" class="card-img-top" alt="Portfolio Item">
-
-          <div class="portfolio-btn d-flex align-items-center justify-content-center">
             <a href="#" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+          <img src="img/hrbritech_ltd_2.jpg" class="card-img-top" alt="Portfolio Item">
+  
+          <div class="portfolio-btn d-flex align-items-center justify-content-center">
+         
               <i class="fa fa-4x fa-plus text-primary"></i>
-            </a>
+          
           </div>
+          </a>
         </div>
 
         <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
           <!-- Portfolio Card -->
-          <img src="img/mess-1.jpg" class="card-img-top" alt="Portfolio Item">
-
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#portfolioModal3"></a>
+          <img src="img/mes_uodate.jpg" class="card-img-top" alt="Portfolio Item">
+     
           <div class="portfolio-btn d-flex align-items-center justify-content-center">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+          
               <i class="fa fa-4x fa-plus text-primary"></i>
-            </a>
           </div>
+          </a>
         </div>
         <div class="modal fade" id="portfolioModal1" tabindex="-1" aria-hidden="true">
           <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -351,10 +353,10 @@
                       <img src="img/mess-2.jpg" class="d-block w-100" alt="Project Image 1">
                     </div>
                     <div class="carousel-item">
-                      <img src="img/mess-3.jpg" class="d-block w-100" alt="Project Image 2">
+                      <img src="img/mes_updated_3.jpg" class="d-block w-100" alt="Project Image 2">
                     </div>
                     <div class="carousel-item">
-                      <img src="img/mess-4.jpg" class="d-block w-100" alt="Project Image 2">
+                      <img src="img/mess_updated_4.jpg" class="d-block w-100" alt="Project Image 2">
                     </div>
                   </div>
                   <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortfolio3"
@@ -394,7 +396,7 @@
       </h1>
       <div class="row align-items-center pb-5">
         <div class="col-lg-6 choose-img">
-          <img class="img-fluid mb-4 mb-lg-0" src="img/AdobeStock_213205204_aboutuss.jpeg" alt="" />
+          <img class="img-fluid mb-4 mb-lg-0" src="img/Why choose us_updated.jpg" alt="" />
         </div>
         <div class="col-lg-6 choose-contents">
           <h4 class="display-5 text-uppercase mb-4">
@@ -526,7 +528,7 @@
     document.addEventListener('DOMContentLoaded', function () {
       const video = document.querySelector('.banner-video video');
       if (video) {
-        video.playbackRate = 0.5;
+        video.playbackRate = 1.5; // Adjust the playback speed as needed
       }
     });
   </script>
