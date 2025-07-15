@@ -60,12 +60,16 @@
 
 <div class="banner">
     <div class="banner-video">
-      <video autoplay muted loop class="w-100">
+      <video autoplay muted loop class="w-100 video-desktop">
         <source src="img/Hero video High resolution.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+          <video autoplay muted loop class="w-100 video-mobile">
+      <source src="img/Mobile.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
     </div>
-    <!-- <div class="video-overlay"></div> -->
+    
     
     <div class="container banner-items">
       <div class="row">
@@ -274,7 +278,7 @@
                 <div class="portfolio-content">
                   <h5 class="text-black">Nourish Life Care – Disability Support Services Website</h5>
               
-                  <p style="font-size: 14px;">We collaborated with Nourish Life Care, a dedicated disability care
+                  <p class="portfolio-blog1-paragraph" style="font-size: 14px;">We collaborated with Nourish Life Care, a dedicated disability care
                     provider, to design and develop a fully responsive website that reflects their mission of empowering
                     individuals with tailored support. The project focused on creating an accessible, user-friendly, and
                     informative platform that highlights their services, values, and commitment to person-centred care.
@@ -374,7 +378,7 @@
                 <!-- Content Section -->
                 <div class="portfolio-content">
                   <h5 class="text-black">Manufacturing Execution System</h5>
-                  <p style="font-size: 16px;">ChoiceDev engineered a custom MES solution for Hybritech Innovations Ltd to enable real-time production control and data-driven decision-making on the shop floor. Built with a microservices architecture and integrated with existing ERP systems, the MES features live data capture from IoT-enabled machinery, automated workflow execution, and KPI-driven performance dashboards. The system enhances traceability, reduces downtime, and ensures seamless synchronization between enterprise planning and floor-level operations.</p>
+                  <p class="portfolio-blog1-paragraph" style="font-size: 16px;">ChoiceDev engineered a custom MES solution for Hybritech Innovations Ltd to enable real-time production control and data-driven decision-making on the shop floor. Built with a microservices architecture and integrated with existing ERP systems, the MES features live data capture from IoT-enabled machinery, automated workflow execution, and KPI-driven performance dashboards. The system enhances traceability, reduces downtime, and ensures seamless synchronization between enterprise planning and floor-level operations.</p>
                   <ul class="list-inline">
                     <li class=""><strong>Client:</strong> Hybritech Innovations Ltd</li>
                     <li class=""><strong>Category:</strong> ERP Solution</li>
@@ -524,14 +528,14 @@
   <a href="#" class="btn btn-lg btn-footer btn-lg-square back-to-top"><i class="fa fa-angle-up"></i></a>
 
 
-  <script>
+  <!-- <script>
     document.addEventListener('DOMContentLoaded', function () {
       const video = document.querySelector('.banner-video video');
       if (video) {
         video.playbackRate = 1.5; // Adjust the playback speed as needed
       }
     });
-  </script>
+  </script> -->
 
   <!-- JavaScript Libraries -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
