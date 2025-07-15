@@ -8365,7 +8365,7 @@ h6,
 
 .banner-img {
     height: 82vh!important;
-  width: 100%;
+  width: 100%; 
   height: auto;
   display: block;
 }
@@ -9158,13 +9158,12 @@ button.icons {
     min-height: 20vh;
   }
  .banner2 {
-    height: 40vh;
+    height: 50vh!important;
   }
   .banner-img {
-    height: 40vh!important;
+    height: 50vh!important;
   width: 100%;
-  height: auto;
-  display: block;
+
 }
 
   .banner3 {
@@ -9283,10 +9282,12 @@ button.icons {
     gap:5px
   }
      .banner-items-service h1{
+      padding-top: 5vh !important;
     font-size: 30px; 
   }
     .banner-items-service p{
     font-size: 12px!important; 
+    padding-bottom: 5vh!important;
   }
   
 }
