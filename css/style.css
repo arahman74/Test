@@ -8397,7 +8397,7 @@ h6,
 }
 .banner-items-service {
   padding-top: 25vh !important;
-
+  align-items: flex-end;
   position: relative;
   z-index: 3;
 }
@@ -8420,7 +8420,7 @@ h6,
 .blogbanner1 {
   height: 70vh;
 
-  background-image: url(../img/AI\ page\ F.jpg);
+  background-image: url(../img/AI\ page\ FF.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -8428,7 +8428,7 @@ h6,
 }
 .blogbanner2 {
   height: 70vh;
-  background-image: url(../img/Low\ code\ page\ F.jpg);
+  background-image: url(../img/Low\ code\ page\ FF.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -8516,7 +8516,7 @@ h6,
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url(../img/Resources\ F.jpg);
+  background-image: url(../img/Resources\ FF.jpg);
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   background-size: cover;
