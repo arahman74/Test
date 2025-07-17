@@ -8485,7 +8485,12 @@ h6,
   background-repeat: no-repeat;
   background-color: #000 !important;
 }
-
+.policy-banner-items{
+  /* padding-top: 100px !important; */
+}
+.policy-title-banner{
+  padding-top: 150px !important;
+}
 .termsbanner {
   height: 40vh;
   background-image: url(../img/conditionsss.jpg);
@@ -8853,7 +8858,7 @@ h6,
   box-sizing: border-box;
   box-shadow: 2px solid grey;
   background-color: #008080;
-  padding: 132px 49px 40px 60px;
+  padding: 132px 10px 70px 40px;
   margin-bottom: 30px;
   border-radius: 10px;
 }
@@ -9145,11 +9150,11 @@ button.icons {
     min-height: 300px;
   }
     .video-desktop {
-    display: none;
+    display: none!important;
   }
 
   .video-mobile {
-    display: block;
+    display: block!important;
   }
   .banner-overlay {
     min-height: 20vh;
@@ -9281,12 +9286,20 @@ button.icons {
     padding-left: 20px;
     gap:5px
   }
+  .banner-items-service{
+    padding-left: 7px;
+    padding-right: 3px;
+  }
      .banner-items-service h1{
       padding-top: 5vh !important;
     font-size: 30px; 
   }
+    .policy-title-banner{
+      padding-left: 3px!important;
+  padding-top: 10px !important;
+}
     .banner-items-service p{
-    font-size: 12px!important; 
+    font-size: 10px!important; 
     padding-bottom: 5vh!important;
   }
   
@@ -9300,11 +9313,11 @@ button.icons {
     min-height: 20vh;
   }
     .video-desktop {
-    display: none;
+    display: none!important;
   }
 
   .video-mobile {
-    display: block;
+    display: block!important;
   }
   .modal-content {
     width: 100% !important;
@@ -9344,6 +9357,10 @@ button.icons {
   .blog-title-banner {
     padding-top: 2px !important;
   }
+  .policy-title-banner{
+    padding-left: 10px!important;
+  padding-top: 30px !important;
+}
   .policybanner {
     height: 15vh;
   }
@@ -9477,11 +9494,11 @@ button.icons {
     min-height: 300px;
   }
   .video-desktop {
-    display: none;
+    display: none!important;
   }
 
   .video-mobile {
-    display: block;
+    display: block!important;
   }
   .banner-overlay {
     min-height: 30vh;
@@ -9636,6 +9653,9 @@ button.icons {
   .blog-title-banner {
     padding-top: 2px;
   }
+  .policy-title-banner{
+  padding-top: 80px !important;
+}
   .banner-items h1 {
     font-size: 40px;
   }

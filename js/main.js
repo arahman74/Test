@@ -75,8 +75,6 @@
     });
 
 
-
-
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
@@ -220,7 +218,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('URL status parameter:', status);
     
     if (status === 'success') {
-        showMessage('Thank you! Your message has been sent successfully.', 'success');
+        showMessage('Thank you for reaching out. We’ve received your message and will get back to you shortly.', 'success');
         history.replaceState(null, '', window.location.pathname);
     } else if (status === 'error') {
         showMessage('There was an error sending your message. Please try again.', 'error');

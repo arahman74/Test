@@ -110,7 +110,7 @@
                   </div>
                   <div class="contact-info-content">
                     <p>Send E-Mail</p>
-                    <h4>info@choicedev.com.au</h4>
+                    <h5>info@choicedev.com.au</h5>
                   </div>
                 </div>
               </div>
@@ -158,9 +158,11 @@
                     <div class="col-lg-6">
                       <div class="single-input-box">
                         <input
-                          type="number"
+                          type="tel"
                           name="number"
                           placeholder="Phone Number"
+                          pattern="\d{10,}"
+                          title="Phone number must be at least 10 digits"
                           required
                         />
                       </div>
@@ -198,7 +200,7 @@
                 </form>
                               <!-- reCAPTCHA Token Set -->
               <script>
-                grecaptcha.ready(function () {
+          grecaptcha.ready(function () {
                   grecaptcha.execute('6Le_3lErAAAAAB9P1eoYPNtKhUEGKf4isAp_WZkC', { action: 'submit' }).then(function (token) {
                     document.getElementById('g-recaptcha-response').value = token;
                   });

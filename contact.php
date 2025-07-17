@@ -31,6 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $name = htmlspecialchars($_POST['name']);
     $number = htmlspecialchars($_POST['number']);
+
     $company = htmlspecialchars($_POST['company']);
     $email = htmlspecialchars($_POST['email']);
     $subject = htmlspecialchars($_POST['subject']);
@@ -46,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Password = 'ehangsxysryxueid';  
         $mail->setFrom($email, $name);  
-        $mail->addAddress('info@choicedev.com.au', 'Recipient Name');
+        $mail->addAddress('arahman.hybritech65@gmail.com', 'Recipient Name');
         $mail->addReplyTo($email, $name);
         $mail->Subject = $subject;
         $mail->isHTML(true);
