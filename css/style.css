@@ -9700,15 +9700,7 @@ button.icons {
 }
 
 @media (max-width: 767px) {
-  /* .banner2 {
-    min-height: 0;
-  }
 
-  .banner2::before {
-    background-size: 100% 100%;
-    height: 60vh;
-    top: 0;
-  } */
 
   .hero-banner-overlay {
     top: 60vh;
@@ -9721,13 +9713,4 @@ button.icons {
     padding: 20px 0;
   }
 
-  /* .banner-items-service h1.display-3 {
-    font-size: 1.8rem !important;
-    margin-bottom: 1rem !important;
-  }
-
-  .banner-items-service p.text-light {
-    font-size: 0.9rem;
-    margin-bottom: 1.5rem !important;
-  } */
 }
